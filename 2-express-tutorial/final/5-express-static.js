@@ -11,6 +11,7 @@ app.use(express.static('./public'))
 //    adding to the static assets
 //    ssr
 // })
+
 app.all('*',(req,res)=>{
     res.status(404).send('resource not found')
 })
